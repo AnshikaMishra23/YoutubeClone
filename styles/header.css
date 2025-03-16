@@ -1,0 +1,174 @@
+/* .search-bar{
+    display:block;
+    font-size:20px;
+    margin-left:12px; 
+    
+} */
+.header{
+    height:55px;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: white;
+    border-bottom-width:1px ;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(223, 216, 216);
+    z-index: 100;
+}
+.left-section{
+    /* width:150px;
+    background-color: lightblue; */
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu{
+    margin-left:24px;
+    margin-right:20px ;
+    
+}
+.youtube-logo{
+    background-color: white;
+    height: 10px;
+    
+}
+.middle-section{
+    flex:1;
+
+    
+    /* background-color: lightpink; */
+    margin-left:70px;
+    margin-right:35px;
+    max-width:500px;
+    
+    display:flex;
+    align-items:center;
+}
+ /* .search-button{
+    height:40px;
+    width:60px;
+}
+.voice-search-button{
+    height:40px;
+    width:40px;
+}  */
+.search-bar{
+    flex:1;
+    height:36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(181, 179, 179);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    /* usually search bars have a default width, flex:1 kiya hua hai but jab vo 
+    default value hit hoti hai to fir aur shrink nhi hota , isko overcome karne
+    k liye width: 0*/
+    width:0;
+}
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 15px;
+}
+.search-button{
+    
+   
+   background-color: rgb(240,240,240);
+   border-width: 1px;
+   border-color:solid ;
+   border-color:rgb(192,192,192);
+   margin-left:-1;/*negative spacing pulls the element in*/
+   margin-right:8px;
+   position:relative;
+}
+.search-button,
+.voice-search-button
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip{
+    font-family: Roboto,Arial;
+    position:absolute;
+    background-color: gray;
+    color:white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius:2px;
+    font-size:12px;
+    bottom:-30px;
+    opacity:0;
+    transition:opacity 0.15s;
+    pointer-events:none;
+    /* when we hover over tooltip no effect */
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip{
+    opacity:1;
+    cursor: pointer;
+
+}
+.voice-search-button{
+    border-radius: 20px;
+    border:none;
+    background-color: rgb(244, 240, 240);
+   
+}
+.right-section{
+    width:200px;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+    /* no matters what happen don't shrink */
+}
+
+.upload-icon{
+    height: 24px;
+}
+.youtube-apps-icon{
+    height:24px;
+
+}
+.notifications-icon{
+    height:24px;
+}
+/* .notifications-icon-container{
+    position: relative;
+}
+.notifications-count{
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: red;
+    color:white;
+} 
+    not working here check why
+    */
+.current-user-picture{
+    height:32px;
+    width:30px;
+    border-radius: 16px;
+}

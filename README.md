@@ -10,4 +10,3 @@ A simple frontend clone of YouTube built using **HTML & CSS**. This project repl
 ✅ Sidebar navigation  
 ✅ Dark & Light theme support (optional enhancement)  
 
-## 📂 Project Structure  
